@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <section class="bg-[#FFF9F3] shadow border-b-1 border-b-[#e6e1e1]">
+        <div class="container mx-auto px-4">
+          <div class="flex items-center justify-between py-4">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+              <a href="#" class="text-xl font-bold text-gray-800"><img src="./assets/images/logo/dorik_logo.svg"
+                  width="100px" alt=""></a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <ul class="hidden md:flex space-x-6 font-medium text-[18px] leading-[27px] text-[#45426e]">
+              <li><a href="" class="">✨Dorik AI</a></li>
+              <li><a href="" class="flex justify-center items-center">
+                
+                Product
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" color="undefined"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a></li>
+              <li><a href="" class="">Templates</a></li>
+              <li><a href="" class="">Pricing</a></li>
+              <li><a href="" class="flex justify-center items-center">
+                
+                Resources
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" color="undefined"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a></li>
+            </ul>
+
+            <!-- Desktop Buttons -->
+            <div class="hidden md:flex items-center space-x-4">
+              <a href="#" class="text-[#3a30ba] font-medium text-[18px]">Login</a>
+              <a href="#" class="font-medium px-4 py-2 rounded-md border-1 border-[#3a30ba]">Sign Up</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+              <button onclick="toggleMobileMenu()"
+                class="text-gray-800 text-base border px-3 py-1 rounded hover:bg-gray-100">
+                Menu
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Dropdown Menu -->
+          <div id="mobile-menu" class="md:hidden hidden flex flex-col space-y-2 pb-4">
+            <a href="" class="block text-[18px]">✨Dorik AI</a>
+            <a href="" class="block text-[18px]">Product</a>
+            <a href="" class="block text-[18px]">Templates</a>
+            <a href="" class="block text-[18px]">Pricing</a>
+            <a href="" class="block text-[18px]">Resources</a>
+            <hr>
+            <a href="#" class="block text-gray-700 hover:text-blue-600">Login</a>
+            <a href="#" class="block text-white bg-blue-600 px-4 py-2 rounded hover:bg-blue-700 text-center">Sign Up</a>
+          </div>
+        </div>
+      </section>
+
+    </nav>
+  </header>
+
+  <section class="bg-[#FFF9F3] pb-[190px]">
+    <div class="container">
+      <div class="flex flex-col pt-[75px] justify-center items-center px-[20px]">
+        <h1 class="text-[71px] text-center mx-auto text-[#17134a] leading-[71px] font-bold z-10">
+          <span>Build Websites with<br />the Power of AI </span>
+        </h1>
+        <div
+          class="mt-[20px] font-normal w-xl leading-[33px] mb-[-8px] pt-[6px] text-[22px] text-center mx-auto text-[#45426E]">
+          <p>
+            It takes minutes to finish a website with Dorik, it's simple,
+            intuitive and can be easily learned by beginners
+          </p>
+        </div>
+        <ul class="flex justify-center flex-wrap gap-[30px] items-center mt-7 text-[18px] ml-[10px]">
+          <li>
+            <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
+                    fill="#3A30BA" />
+                </svg></span>
+              <span>
+                <p>Landing Pages</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
+                    fill="#3A30BA" />
+                </svg></span>
+              <span>
+                <p>Ai Generator</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
+                    fill="#3A30BA" />
+                </svg></span>
+              <span>
+                <p>Free Stock Images</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
+                    fill="#3A30BA" />
+                </svg></span>
+              <span>
+                <p>Blogs</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
+                    fill="#3A30BA" />
+                </svg></span>
+              <span>
+                <p>Web Analytics</p>
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="flex text-left text-[18px] items-center gap-[5px] font-medium">
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                  <path
+                    d="M10.6875 2.21875C12.8424 2.21875 14.909 3.07477 16.4327 4.59851C17.9565 6.12224 18.8125 8.18887 18.8125 10.3438C18.8125 12.4986 17.9565 14.5653 16.4327 16.089C14.909 17.6127 12.8424 18.4688 10.6875 18.4688C8.53262 18.4688 6.46599 17.6127 4.94226 16.089C3.41852 14.5653 2.5625 12.4986 2.5625 10.3438C2.5625 8.18887 3.41852 6.12224 4.94226 4.59851C6.46599 3.07477 8.53262 2.21875 10.6875 2.21875ZM10.6875 20.3438C13.3397 20.3438 15.8832 19.2902 17.7586 17.4148C19.6339 15.5395 20.6875 12.9959 20.6875 10.3438C20.6875 7.69159 19.6339 5.14805 17.7586 3.27268C15.8832 1.39732 13.3397 0.34375 10.6875 0.34375C8.03534 0.34375 5.4918 1.39732 3.61643 3.27268C1.74107 5.14805 0.6875 7.69159 0.6875 10.3438C0.6875 12.9959 1.74107 15.5395 3.61643 17.4148C5.4918 19.2902 8.03534 20.3438 10.6875 20.3438ZM15.1016 8.50781C15.4688 8.14062 15.4688 7.54688 15.1016 7.18359C14.7344 6.82031 14.1406 6.81641 13.7773 7.18359L9.44141 11.5195L7.60547 9.68359C7.23828 9.31641 6.64453 9.31641 6.28125 9.68359C5.91797 10.0508 5.91406 10.6445 6.28125 11.0078L8.78125 13.5078C9.14844 13.875 9.74219 13.875 10.1055 13.5078L15.1016 8.50781Z"
+                    fill="#3A30BA" />
+                </svg></span>
+              <span>
+                <p>White-Label CMS</p>
+              </span>
+            </div>
+          </li>
+        </ul>
+        <div class="btn-background w-full mt-10">
+
+          <div class="py-1 mb-5 flex justify-center">
+            <a href="#"
+              class="inline-flex items-center justify-center px-7 py-4 bg-[#3A30BA] text-white text-xl font-medium rounded-md hover:bg-[#2f26a0] transition duration-200">
+              Try it Free
+              <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 
+                                   12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 
+                                   73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 
+                                   45.3 0l160 160z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="px-5">
+          <div class="flex justify-center items-center flex-wrap gap-x-[40px] gap-y-[20px] mt-[30px]">
+            <div class="py-15px text-[#45426E] text-[16px] font-normal leading-[24px]">
+              Featured on:
+            </div>
+            <div class="block w-[70px]">
+              <img src="./assets/images/featured_on/1.svg" alt="" />
+            </div>
+            <div class="block w-[70px]">
+              <img src="./assets/images/featured_on/2.png" alt="" />
+            </div>
+            <div class="block w-[45px]">
+              <img src="./assets/images/featured_on/3.svg" alt="" />
+            </div>
+            <div class="block w-[70px]">
+              <img src="./assets/images/featured_on/4.svg" alt="" />
+            </div>
+            <div class="block w-[70px]">
+              <img src="./assets/images/featured_on/5.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-10">
+          <div class="">
+            <img width="300px" src="./assets/images/sdfsfsfsf.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="bg-no-repeat bg-cover bg-top  min-h-[551px] overflow-hidden">
+          <div
+            class="relative w-full  border border-[#E6E1E4] rounded-[26px] pt-5 pb-[14px] px-5 mx-auto max-w-[997px] h-[504px] backdrop-blur-sm bg-[linear-gradient(130deg,rgba(155,144,196,0.1),rgba(62,67,127,0.2))] bg-no-repeat">
+
+            <div id="video-thumbnail" class="relative w-[957px] h-[470px]  rounded-[20px]">
+              <img src="./assets/images/cover.jpeg" alt="cover" class="w-full h-full object-cover rounded-[20px]">
+
+              <div class="absolute inset-0 flex justify-center items-center">
+                <button id="playButton"
+                  class="bg-[#8C3BFC] py-5 px-[30px] rounded-[10px] text-white text-[30px] hover:bg-[#27A6FE]">
+                  <svg class="w-[30px] h-[30px]" fill="currentColor" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2  23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+
+            <div id="video-container" class="hidden">
+              <video id="mainVideo" controls class="w-full h-auto" poster="./assets/images/cover.jpeg">
+                <source src="https://files.dorik.com/635bcad9b8a74e0091632998/videos/Dorik-AI-Intro-720p-vG0YQ.mp4"
+                  type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section>
+    <div class="container mx-auto">
+      <div class="flex flex-col -mt-[140px] lg:flex-row pt-[30px] justify-center">
+        <div class="lg:w-1/3 flex flex-col grow">
+          <div class="p-5 text-center border-b border-dorik-21 grow bg-white">
+            <div class="mt-[5px] flex justify-center">
+              <img class="w-[60px] h-[60px] rounded-full object-cover" src="./assets/images/testimonials/test1.webp"
+                alt="">
+            </div>
+            <div class="mt-[18px] pb-2">
+              <p class="text-[18px]">I can't tell you how much I love Dorik! <span class="bg-[#FCF2DE]"><strong>I can
+                    create beautiful websites without even touching a line of code.</strong></span></p>
+            </div>
+            <div class="mb-[14px]">
+              <h6>Oday Mashalla</h6>
+              <p class="text-sm">Design Director @ humblebee</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 flex flex-col grow">
+          <div class="p-5 text-center border-b border-dorik-21 grow bg-white">
+            <div class="mt-[5px] flex justify-center">
+              <img class="w-[60px] h-[60px] rounded-full object-cover" src="./assets/images/testimonials/test2.webp"
+                alt="">
+            </div>
+            <div class="mt-[18px] pb-2.5">
+              <p class="text-[18px]"><span class="bg-[#FCF2DE]"><strong>One of the best website building tools.
+                  </strong></span>Great product!!</p>
+            </div>
+            <div class="mb-[14px]">
+              <h6>Upen V.</h6>
+              <p class="text-sm">Founder @ Siteoly</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:w-1/3 flex flex-col grow">
+          <div class="p-5 text-center border-b border-dorik-21 grow bg-white">
+            <div class="mt-[5px] flex justify-center">
+              <img class="w-[60px] h-[60px] rounded-full object-cover" src="./assets/images/testimonials/text3.webp"
+                alt="">
+            </div>
+            <div class="mt-[18px] pb-2">
+              <p class="text-[18px]">I'm so in love with this tool! <span class="bg-[#FCF2DE]"><strong>Building websites
+                    has never been this FAST and EASY!</strong></span></p>
+            </div>
+            <div class="mb-[14px]">
+              <h6>Laura Ang</h6>
+              <p class="text-sm">Design Fellow (ODD3), On Deck</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="mt-[50px]">
+        <div class="text-center">
+          <h6 class="mb-[30px]">
+            <span class="text-[rgb(222,35,142)]">♡</span> Loved by cool people from
+          </h6>
+        </div>
+        <div>
+          <div class="flex flex-wrap gap-[50px] gap-y-[30px] items-center justify-center">
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/1.webp" alt="Netflix">
+            </div>
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/2.webp" alt="Flippa">
+            </div>
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/3.webp"
+                alt="Standford University">
+            </div>
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/4.png"
+                alt=" International Institute of Molecular and Cell Biology in Warsaw - IIMCB">
+            </div>
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/5.png" alt="Taptap Send">
+            </div>
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/6.svg" alt="Dekathlon">
+            </div>
+            <div>
+              <img class="h-10 object-cover grayscale-100" src="./assets/images/partner/7.jpeg" alt="NoCode France">
+            </div>
+            <div>
+              <img class="h-4 object-cover grayscale-100" src="./assets/images/partner/8.svg" alt="Vivacom">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pb-10">
+    <div class="container mx-auto">
+      <div class="bg-white">
+        <div class="mx-[-16px] flex flex-wrap">
+
+          <div class="pt-16">
+            <div class="bg-[#FFF9F3] px-5 py-8 rounded-[5px] flex flex-wrap ">
+              <div class="w-6/12 px-4">
+                <div class="py-[15px] ">
+                  <h3 class="h3 mb-5 text-[50px] font-bold leading-[50px]">Transform Your Ideas <br> into Reality with
+                    AI</h3>
+                  <p class="text-[20px] leading-[30px] font-normal font-[Sans-serif]">Bring your creative vision to
+                    life
+                    with Dorik AI</p>
+                  <ul class="flex flex-col gap-2 py-5">
+                    <li class="flex items-center gap-1 font-medium text-[18px]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-check text-[#3a30ba]" color="undefined">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      Website Generation
+                    </li>
+                    <li class="flex items-center gap-1 font-medium text-[18px]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-check text-[#3a30ba]" color="undefined">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      AI-Generated Contents (Text & Images)
+                    </li>
+                    <li class="flex items-center gap-1 font-medium text-[18px]">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-check text-[#3a30ba]" color="undefined">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      Build Website in Any Language
+                    </li>
+                  </ul>
+                  <div class="py-4">
+                    <button
+                      class="bg-indigo-800 px-5 py-3 rounded-md text-white font-semibold leading-[1.5] text-[16px]">Try
+                      Dorik Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                        stroke="currentColor" class="size-3 inline">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="w-6/12 px-4">
+                <div class="">
+                  <img class="object-cover" src="./assets/images/project/1.png" alt="">
+                </div>
+                <p class="text-center text-[18px]">Prompt: <em>"Build a website for my coffeeshop"</em>
+                </p>
+              </div>
+              <div class="w-full px-4 py-[15px]">
+                <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
+              </div>
+              <div class="w-1/3 px-4">
+                <div class="py-[15px] pt-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-[#3a30ba]">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                  </svg>
+                  <h6 class="h6 py-5 text-xl">Stunning Websites</h6>
+                  <p class="text-[18px]">Type a prompt, get a full website using the power of
+                    cutting-edge AI technology</p>
+                </div>
+              </div>
+              <div class="w-1/3 px-4">
+                <div class="py-[15px] pt-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-[#3a30ba]">
+                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                  </svg>
+                  <h6 class="h6 py-5 text-xl">Compelling Copies</h6>
+                  <p class="text-[18px]">Generate all your website content in two steps—a prompt & a
+                    click!</p>
+                </div>
+              </div>
+              <div class="w-1/3 px-4">
+                <div class="py-[15px] pt-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-[#3a30ba]">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                  <h6 class="h6 py-5 text-xl">Pixel Perfect Images</h6>
+                  <p class="text-[18px]">Type a prompt and generate the exact image on your mind.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="pb-10">
+      <div class="container mx-auto">
+        <div class="bg-white">
+          <div class="mx-[-16px] flex flex-wrap">
+            <div class="pt-16">
+              <div class="bg-[#FFF9F3] px-5 py-8 rounded-[5px] flex flex-wrap ">
+                <div class="w-6/12 px-4">
+                  <div class="py-[15px] ">
+                    <h3 class="h3 mb-5 text-[50px] font-bold leading-[50px]">No-Code Website <br> Builder</h3>
+                    <p class="text-[20px] leading-[30px] font-normal font-[Sans-serif]">Unleash your creativity with our
+                      easy-to-use and powerful <br> website builder.</p>
+                    <ul class="flex flex-col gap-2 py-5">
+                      <li class="flex items-center gap-1 font-medium text-[18px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Create websites in minutes without any code
+                      </li>
+                      <li class="flex items-center gap-1 font-medium text-[18px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Say goodbye to lengthy development time
+                      </li>
+                      <li class="flex items-center gap-1 font-medium text-[18px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                          <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                        Customize everything to match your vision
+                      </li>
+                    </ul>
+                    <div class="py-4">
+                      <button
+                        class="bg-indigo-800 px-5 py-3 rounded-md text-white font-semibold leading-[1.5] text-[16px]">Try
+                        Dorik Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                          stroke-width="3" stroke="currentColor" class="size-3 inline">
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-6/12 px-4">
+                  <div class="">
+                    <img class="object-cover" src="./assets/images/project/2.png" alt="">
+                  </div>
+
+                </div>
+                <div class="w-full px-4 py-[15px]">
+                  <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
+                </div>
+                <div class="w-1/3 px-4">
+                  <div class="py-[15px] pt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                      class="text-[#3a30ba] feather feather-pen-tool" color="[object Object]">
+                      <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                      <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                      <path d="M2 2l7.586 7.586"></path>
+                      <circle cx="11" cy="11" r="2"></circle>
+                    </svg>
+                    <h6 class="h6 text-xl py-5">Drag & Drop Builder</h6>
+                    <p class="text-[18px]">Drag-and-drop builder makes website creation a breeze. No coding is required.
+                    </p>
+                  </div>
+                </div>
+                <div class="w-1/3 px-4">
+                  <div class="py-[15px] pt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                      class="text-[#3a30ba] feather feather-box" color="[object Object]">
+                      <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                      </path>
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                      <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <h6 class="h6 text-xl py-5">Templates</h6>
+                    <p class="text-[18px]">With pre-designed templates, you can quickly build your website. </p>
+                  </div>
+                </div>
+                <div class="w-1/3 px-4">
+                  <div class="py-[15px] pt-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                      class="text-[#3a30ba] feather feather-grid" color="[object Object]">
+                      <rect x="3" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="14" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <h6 class="h6 text-xl py-5">250+ UI Blocks</h6>
+                    <p class="text-[18px]">Pre-designed UI blocks to make your building journey faster</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="pb-10">
+        <div class="container mx-auto">
+          <div class="bg-white">
+            <div class="mx-[-16px] flex flex-wrap">
+
+              <div class="pt-16">
+                <div class="bg-[#F1FAF7] px-5 py-8 rounded-[5px] flex flex-wrap ">
+                  <div class="w-6/12 px-4">
+                    <div class="py-[15px] ">
+                      <h3 class="h3 mb-5 text-[50px] font-bold leading-[50px]">White-Label CMS</h3>
+                      <p class="text-[20px] leading-[30px] font-normal font-[Sans-serif]">A complete solution to build
+                        websites under your <br> brand for your clients.</p>
+                      <ul class="flex flex-col gap-2 py-5">
+                        <li class="flex items-center gap-1 font-medium text-[18px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                          Add your own brand’s logo and colors
+                        </li>
+                        <li class="flex items-center gap-1 font-medium text-[18px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                          Dedicated dashboard for your client
+                        </li>
+                        <li class="flex items-center gap-1 font-medium text-[18px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                          Build anything from blogs to directories
+                        </li>
+                      </ul>
+                      <div class="py-4">
+                        <button
+                          class="bg-indigo-800 px-5 py-3 rounded-md text-white font-semibold leading-[1.5] text-[16px]">Try
+                          Dorik Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="3" stroke="currentColor" class="size-3 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-6/12 px-4">
+                    <div class="">
+                      <img class="object-cover" src="./assets/images/project/3.png" alt="">
+                    </div>
+
+                  </div>
+                  <div class="w-full px-4 py-[15px]">
+                    <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
+                  </div>
+                  <div class="w-1/3 px-4">
+                    <div class="py-[15px] pt-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-[#3a30ba] feather feather-edit-3" color="[object Object]">
+                        <path d="M12 20h9"></path>
+                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                      </svg>
+                      <h6 class="h6 text-xl py-5">Built-in Blogging Platform</h6>
+                      <p class="text-[18px]">Build and publish blogs with all the features you need to rank on Google
+                        and grow audience.</p>
+                    </div>
+                  </div>
+                  <div class="w-1/3 px-4">
+                    <div class="py-[15px] pt-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-[#3a30ba] feather feather-clipboard" color="[object Object]">
+                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                      </svg>
+                      <h6 class="h6 text-xl py-5">White Label Dashboard</h6>
+                      <p class="text-[18px]">A white-label dashboard for your clients that you can brand as your own
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-1/3 px-4">
+                    <div class="py-[15px] pt-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-[#3a30ba] feather feather-credit-card" color="[object Object]">
+                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                      </svg>
+                      <h6 class="h6 text-xl py-5">Client Billing</h6>
+                      <p class="text-[18px]">Send invoices and receive payments from your clients directly from your
+                        dashboard.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-10">
+        <div class="container mx-auto">
+          <div class="bg-white">
+            <div class="mx-[-16px] flex flex-wrap">
+
+              <div class="pt-16">
+                <div class="bg-[#EEEBFA] px-5 py-8 rounded-[5px] flex flex-wrap ">
+                  <div class="w-6/12 px-4">
+                    <div class="py-[15px] ">
+                      <h3 class="h3 mb-5 text-[50px] font-bold leading-[50px]">Build with Airtable Data</h3>
+                      <p class="text-[20px] leading-[30px] font-normal font-[Sans-serif]">Bring your Airtable Data to
+                        beautiful interfaces with our <br>Airtable elements</p>
+                      <ul class="flex flex-col gap-2 py-5">
+                        <li class="flex items-center gap-1 font-medium text-[18px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                          Present your data from Airtable into beautiful interfaces
+                        </li>
+                        <li class="flex items-center gap-1 font-medium text-[18px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                          Easy-to-use filter and search option for your users
+                        </li>
+                        <li class="flex items-center gap-1 font-medium text-[18px]">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="feather feather-check text-[#3a30ba]" color="undefined">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                          </svg>
+                          Create blogs, job boards, shops, profiles, and more
+                        </li>
+                      </ul>
+                      <div class="py-4">
+                        <button
+                          class="bg-indigo-800 px-5 py-3 rounded-md text-white font-semibold leading-[1.5] text-[16px]">Try
+                          Dorik Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="3" stroke="currentColor" class="size-3 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-6/12 px-4">
+                    <div class="">
+                      <img class="object-cover" src="./assets/images/project/3.png" alt="">
+                    </div>
+
+                  </div>
+                  <div class="w-full px-4 py-[15px]">
+                    <hr class="border-0 h-px" style="background-color: rgba(8, 10, 71, 0.1);">
+                  </div>
+                  <div class="w-1/3 px-4">
+                    <div class="py-[15px] pt-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-[#3a30ba] feather feather-layout" color="[object Object]">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="9" y1="21" x2="9" y2="9"></line>
+                      </svg>
+                      <h6 class="h6 text-xl py-5">Beautiful Layouts</h6>
+                      <p class="text-[18px]">Showcase your data in any layout, like the grid, table, job board, etc.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-1/3 px-4">
+                    <div class="py-[15px] pt-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-[#3a30ba] feather feather-zap" color="[object Object]">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                      </svg>
+                      <h6 class="h6 text-xl py-5">Realtime Update</h6>
+                      <p class="text-[18px]">Update data on Airtable and it will be updated on your website instantly
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-1/3 px-4">
+                    <div class="py-[15px] pt-5">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                        class="text-[#3a30ba] feather feather-database" color="[object Object]">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                      </svg>
+                      <h6 class="h6 text-xl py-5">Advanced Customization</h6>
+                      <p class="text-[18px]">Use Airtable as a data source in Dorik CMS and customize everything.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="flex container justify-center items-center py-20 md:w-[1140px] mx-auto">
+          <div class="w-1/2">
+            <div class="text-[60px] font-semibold tracking-[-1px] leading-[55px]">
+              <h2>Join over 100k+ happy users from around the world!</h2>
+            </div>
+            <div>
+              <button class="bg-indigo-800 px-5 py-3 rounded-md text-white font-semibold leading-[2] text-[16px]">Wall
+                of Love <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                  stroke="currentColor" class="size-3 inline">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="w-1/2 flex flex-col justify-center items-center space-y-4">
+            <div class="font-semibold"><span style="color: rgb(222,35,142);">♡</span> Loved by cool people from</div>
+            <div class="flex  gap-6">
+              <img src="./assets/images/partner/2.webp" alt="" class="w-24 h-10">
+              <img src="./assets/images/partner/1.webp" alt="" class="w-10 h-10">
+              <img src="./assets/images/partner/3.webp" alt="" class="w-22 h-10">
+              <img src="./assets/images/partner/4.png" alt="" class="w-10 h-10">
+              <img src="./assets/images/partner/5.png" alt="" class="w-21 h-14">
+
+            </div>
+            <div class="flex gap-6">
+              <img src="./assets/images/partner/6.svg" alt="" class="w-40 h-10">
+              <img src="./assets/images/partner/7.jpeg" alt="" class="w-10 h-10">
+              <img src="./assets/images/partner/8.svg" alt="" class="w-40 h-10">
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="bg-[#030521]">
+        <div class="text-white container md:w-[1140px] mx-auto">
+          <h2 class="text-[60px] font-bold leading-[60px] pt-20 pb-10">Beautiful designs, <br> Endless possibilities
+          </h2>
+        </div>
+        <div class="flex container gap-8 py-10 md:w-[1140px] mx-auto">
+          <div class="w-1/3 text-[#d1d0d2] border border-white p-5 bg-transparent">
+            <h2 class="text[24px] font-semibold">Amazing Templates</h2>
+            <h6 class="underline">100+ Beautiful Templates </h6>
+          </div>
+          <div class="w-1/3 text-[#d1d0d2] border border-white p-5 ">
+            <h2 class="text[24px] font-semibold">UI Blocks</h2>
+            <h6 class="underline">250+ Stunning UI Blocks </h6>
+          </div>
+          <div class="w-1/3 text-[#d1d0d2] border border-white p-5 ">
+            <h2>Elements</h2>
+            <h6>20+ Elements </h6>
+          </div>
+        </div>
+        <div class="dorik-image-uyx87kss">
+          <img src="./assets/images/portfolio.webp">
+        </div>
+      </section>
+
+
+      <section class="bg-white">
+        <h2 class="text-[60px] font-[sans-serif] tracking-[-1px] leading-[60px] text-center pt-16 pb-2 font-semibold">No
+          Maintenance, More Freedom. </h2>
+        <p class="text-center text-[24px] text-[rgb(69,66,110)] leading-[36px]">The perfect launchpad for your online
+          presence</p>
+        <div class="flex py-10 justify-center items-center container gap-6 md:w-[1140px] mx-auto">
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-server text-purple-600">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+              <line x1="6" y1="6" x2="6.01" y2="6"></line>
+              <line x1="6" y1="18" x2="6.01" y2="18"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Reliable Hosting & CDN</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">We host the websites on AWS &
+              DigitalOcean and serve static content from our Global CDN</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-shield text-[rgb(222,35,142)]">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Free SSL/HTTPS</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Every website built and hosted on
+              our platform comes with a free SSL certificate issued by Let's Encrypt</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-user-plus text-[rgb(39,166,254)]" color="[object Object]">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <line x1="20" y1="8" x2="20" y2="14"></line>
+              <line x1="23" y1="11" x2="17" y2="11"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Team Collaboration</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Collaborate with your team and get
+              input on designs, feedback, or brainstorming sessions.</p>
+          </div>
+
+        </div>
+
+
+        <div class="flex py-10 justify-center items-center container gap-6 md:w-[1140px] mx-auto">
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-credit-card text-[rgb(39,166,254)]">
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+              <line x1="1" y1="10" x2="23" y2="10"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Payment Integration</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Integrate PayPal, Stripe, & Gumroad
+              without code to receive payments from your users. </p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-cloud-snow text-[rgb(140,59,252)]">
+              <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
+              <line x1="8" y1="16" x2="8.01" y2="16"></line>
+              <line x1="8" y1="20" x2="8.01" y2="20"></line>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              <line x1="12" y1="22" x2="12.01" y2="22"></line>
+              <line x1="16" y1="16" x2="16.01" y2="16"></line>
+              <line x1="16" y1="20" x2="16.01" y2="20"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Unlimited Storage & Bandwidth
+            </h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Don’t worry about your site’s
+              storage and bandwidth because Dorik provides you with all the site storage you need.</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-folder-minus text-[rgb(222,35,142)]">
+              <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Forms</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Collaborate with your team and get
+              input on designs, feedback, or brainstorming sessions.</p>
+          </div>
+
+        </div>
+
+
+        <div class="flex py-10 justify-center items-center md:w-[1140px] container gap-6 mx-auto">
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-bar-chart-2 text-[rgb(222,35,142)]">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">User Analytics</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Measure and analyze user data to get
+              an understanding of user behavior across your web pages</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-lock card text-[rgb(39,166,254)]">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Password Protected Pages</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Protect any page on your website
+              with a password. Securely share your pages with your clients.</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-search text-purple-600">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Native SEO</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Optimize your content for SEO and
+              social media to maximize the reach of each post.</p>
+          </div>
+
+        </div>
+
+
+        <div class="flex py-10 justify-center items-center container gap-6 md:w-[1140px] mx-auto">
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-globe text-purple-600">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Custom Domain</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Connect your custom domain or
+              subdomain easily from any domain provider to our platform.</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-code text-[rgb(222,35,142)]">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">AI Code Export</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Export your AI-generated website's
+              clean and un-minified HTML/CSS/JS code with Media files.</p>
+          </div>
+          <div class="w-full md:w-1/3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-share-2 text-[rgb(39,166,254)]">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+            <h2 class="text-[rgb(23,19,74)] text-[24px] font-bold leading-[26.4px] pt-4">Integrations</h2>
+            <p class="leading-[27px] text-[18px] font-normal text-[rgb(69,66,110)]">Collect and send data to popular
+              platforms like Zapier, MailChimp, Airtable, etc using forms.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="p-8 bg-[#FFF9F3]">
+        <h2 class="text-[60px] leading-[1] font-[Sans.serif] tracking-[-1px] text-center pt-10 pb-2 font-bold">
+          Affordable Pricing </h2>
+        <div class="flex justify-center">
+          <p class="text-center text-[18px] font-normal leading-[27px] text-[rgb(69,66,110)]">Start building your
+            websites for free. Upgrade to any paid plans to unlock features like forms,<br> custom domains, and more.
+          </p>
+        </div>
+        <div class="flex justify-center p-6">
+
+          <button class="bg-indigo-800 px-5 py-3 rounded-md text-white font-semibold leading-[1.5] text-[16px]">See
+            Prcing<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+              stroke="currentColor" class="size-3 inline ml-2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>
+          </button>
+        </div>
+
+
+      </section>
+
+      <section class="bg-[#FFFFFF]">
+        <div class="container py-10 md:w-[1140px] mx-auto">
+          <h2 class="text-[60px] leading-[1] font-[Sans.serif text-center font-bold  py-10">Extended Guides, Live
+            Support & Community to help you </h2>
+
+          <div class="flex gap-4">
+            <div class="w-1/3 border-b-4 border-b-indigo-600 bg-[#F6F6FC] rounded-xl px-6 py-10">
+              <h2 class="text-[24px] font-bold leading-[26.4px] ">Documentation</h2>
+              <p class="text-[18px] leading-[27px] font-normal">We have extensive documentation on getting started with
+                Dorik, as well as how to design and customize your website.</p>
+              <button class="font-semibold mt-4">Dorik Helpdesk <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-3 inline">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg></button>
+            </div>
+            <div class="w-1/3 border-b-4 border-b-[#DE238E] bg-[#F6F6FC] rounded-xl px-6 py-10">
+              <h2 class="text-[24px] font-bold leading-[26.4px] ">Live Chat Support</h2>
+              <p class="text-[18px] leading-[27px] font-normal">We are always available on our support channels to help
+                you. Live chat with us or send an email, we will get back to you asap.</p>
+              <button class="font-semibold mt-4">Start Live Chat <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-3 inline">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg></button>
+            </div>
+            <div class="w-1/3 border-b-4 border-b-[#FFCC85] bg-[#F6F6FC] rounded-xl px-6 py-10">
+              <h2 class="text-[24px] font-bold leading-[26.4px] ">Online Forum</h2>
+              <p class="text-[18px] leading-[27px] font-normal">We have a dedicated forum to communicate with our users.
+                In addition to us, the community helps each other to grow.</p>
+              <button class="font-semibold mt-4">Facebook Community <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                  viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-3 inline">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg></button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+      <footer class="bg-[#030521]">
+        <img class="absolute" src="./assets/images/footer-left-logo.svg" alt="">
+        <div class="footer-img bg-no-repeat bg-cover bg-center px-6   p-30">
+          <h2 class="text-white text-center text-[60px] font-[sans-serif] font-bold leading-[60px]">Start Building Your
+            Website!</h2>
+
+          <div class="btn-background w-full mt-10">
+
+            <div class="py-1 mb-5 flex justify-center">
+              <a href="#"
+                class="inline-flex items-center justify-center px-7 py-4 bg-[#3A30BA] text-white text-xl font-medium rounded-md hover:bg-[#2f26a0] transition duration-200">
+                Try Dorik Now
+                <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 320 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 
+                                   12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 
+                                   73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 
+                                   45.3 0l160 160z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="border-b-1 border-b-gray-500 w-[80%] mx-auto "></div>
+
+        <div class="flex py-10 container md:w-[1140px] mx-auto">
+          <div class="w-2/5">
+            <img src="./assets/images/white-img.svg" class='w-[150px]'>
+            <p class="mt-7 text-[16px] text-[#a2a1b7]">❤️ This website is built with Dorik, without writing any code</p>
+            <img src="./assets/images/medel.svg" class="my-7" alt="">
+            <div class="flex items-center gap-2 border">
+              <span
+                class="flex items-center gap-2 bg-[#2b2b2b] border border-black text-white font-semibold px-7 py-2 rounded-md">
+                <span class="w-4 h-4 rounded-full bg-[#33b17e] flex-shrink-0"></span>
+                All systems operational
+              </span>
+            </div>
+
+          </div>
+          <div class="w-1/5">
+            <div>
+              <p class="text-white text-[16px] font-semibold">GENERAL</p>
+            </div>
+
+            <ul class="text-[#a2a1b7] text-[16px]">
+              <li><a href=""></a>About Dorik</li>
+              <li><a href=""></a>Public Roadmap</li>
+              <li><a href=""></a>Changelog</li>
+              <li><a href=""></a>Affiliate Program</li>
+            </ul>
+
+            <div class="mt-4">
+              <p class="text-white text-[16px] font-semibold">RESOURCES</p>
+            </div>
+            <ul class="text-[#a2a1b7] text-[16px]">
+              <li><a href=""></a>Documentation</li>
+              <li><a href=""></a>
+                Tutorial Videos</li>
+              <li><a href=""></a>
+                Community</li>
+              <li><a href=""></a>
+                Dorik Blog
+              </li>
+              <li><a href=""></a>
+                Free Illustrations</li>
+              <li><a href=""></a>Partners</li>
+              <li><a href=""></a>AI Tools Directory</li>
+              <li><a href=""></a>
+                Write for Dorik</li>
+            </ul>
+
+
+          </div>
+          <div class="w-1/5 text-white">
+            <div>
+              <p class="text-white text-[16px] font-semibold">FOLLOW US</p>
+            </div>
+
+            <ul class="text-[#a2a1b7] text-[16px]">
+              <li><a href=""></a>
+                Twitter</li>
+              <li><a href=""></a>
+                LinkedIn</li>
+              <li><a href=""></a>Facebook</li>
+              <li class=""><a href=""></a>Discord <svg aria-hidden="true" focusable="false" data-prefix="fab"
+                  data-icon="discord"
+                  class="w-5 svg-inline--fa fa-discord fa-fw icon icon_349i9ykz inline text-[#FFCC85] ml-1" role="img"
+                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-testid="icon-test">
+                  <path fill="currentColor"
+                    d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                  </path>
+                </svg></li>
+              <li><a href=""></a>Instagram</li>
+              <li><a href=""></a>TikTok</li>
+            </ul>
+
+          </div>
+          <div class="w-1/5 text-white">
+            <div>
+              <p class="text-white text-[16px] font-semibold uppercase">Partner Program</p>
+            </div>
+
+            <p class="text-[#a2a1b7] text-[16px]">Earn up to 40% recurring commission</p>
+            <button class="text-[#FFCC85] font-normal leading-[1.5] text-[16px]">Become a Partner <svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3"
+                stroke="currentColor" class="size-3 inline">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="border-b-1 border-b-gray-500 w-[80%] mx-auto "></div>
+
+        <div class="flex justify-between p-12 container  text-[14px] text-[#a2a1b7] md:w-[1140px] mx-auto">
+          <div>
+            © 2024 Dorik, Inc. All rights reserved
+          </div>
+          <div class="space-x-2">
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+          </div>
+        </div>
+
+      </footer>
+
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+      <script>
+        // Toggle menu for mobile
+        function toggleMobileMenu() {
+          const menu = document.getElementById('mobile-menu');
+          menu.classList.toggle('hidden');
+        }
+      </script>
+
+
+
+</body>
+
+</html>
